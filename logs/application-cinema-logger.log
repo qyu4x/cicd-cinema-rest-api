@@ -1,0 +1,39 @@
+2022-11-04 09:30:04,896 INFO org.springframework.boot.StartupInfoLogger [main] Starting CinemaRestfulApiApplication using Java 17.0.2 on hikaru with PID 43916 (D:\Development\PRODUCTION\ariqkhoiri_reservasi_bioskop\target\classes started by MiyukiKoishiro in D:\Development\PRODUCTION\ariqkhoiri_reservasi_bioskop)
+2022-11-04 09:30:04,897 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-11-04 09:30:04,898 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-04 09:30:10,607 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtAuthRequestFilter' configured for use
+2022-11-04 09:30:11,274 INFO com.coffekyun.cinema.controller.RoleController [main] #calling postInitRoleUserAndAdmin
+2022-11-04 09:30:11,510 WARN com.coffekyun.cinema.service.RoleServiceImpl [main] init role user and admin is available
+2022-11-04 09:30:11,510 INFO com.coffekyun.cinema.controller.RoleController [main] #successfully entered the main user and admin data
+2022-11-04 09:30:14,881 INFO org.springframework.boot.StartupInfoLogger [main] Started CinemaRestfulApiApplication in 10.515 seconds (JVM running for 11.904)
+2022-11-04 09:31:46,177 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] #calling do filter internal
+2022-11-04 09:31:46,178 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] authorization Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NTI4NzA2LCJleHAiOjE2OTkwMzA4MDB9.b81BKiTwk_HATWaiZJr1jYI5a0Y22MbakI8oupDhMr3NGqDQXFMs6sGQEjue822GS9Td6vHF0wSbsT8JJo0oNw
+2022-11-04 09:31:46,178 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NTI4NzA2LCJleHAiOjE2OTkwMzA4MDB9.b81BKiTwk_HATWaiZJr1jYI5a0Y22MbakI8oupDhMr3NGqDQXFMs6sGQEjue822GS9Td6vHF0wSbsT8JJo0oNw 
+2022-11-04 09:31:46,270 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] token aichan@gmail.com 
+2022-11-04 09:31:46,271 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-2] search user by email with user email aichan@gmail.com 
+2022-11-04 09:31:46,301 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-2] successful in getting users with email aichan@gmail.com 
+2022-11-04 09:31:46,303 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-2] Generate roles by becoming set of simple granted authorities
+2022-11-04 09:31:46,304 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] user details aichan@gmail.com with token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NTI4NzA2LCJleHAiOjE2OTkwMzA4MDB9.b81BKiTwk_HATWaiZJr1jYI5a0Y22MbakI8oupDhMr3NGqDQXFMs6sGQEjue822GS9Td6vHF0wSbsT8JJo0oNw 
+2022-11-04 09:31:46,562 INFO com.coffekyun.cinema.controller.UserController [http-nio-8080-exec-2] #calling controller postRequestRegister
+2022-11-04 09:31:46,563 INFO com.coffekyun.cinema.service.UserServiceImpl [http-nio-8080-exec-2] do register new user account
+2022-11-04 09:31:46,755 INFO com.coffekyun.cinema.service.UserServiceImpl [http-nio-8080-exec-2] successfuly register user with email kaffuchan@gmail.com 
+2022-11-04 09:31:46,757 INFO com.coffekyun.cinema.controller.UserController [http-nio-8080-exec-2] #successfully register user with email kaffuchan@gmail.com 
+2022-11-04 09:33:05,634 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-4] #calling do filter internal
+2022-11-04 09:33:05,636 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-4] authorization Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjaGlub2NoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NDY1OTE4LCJleHAiOjE2OTg5NDQ0MDB9.5pxocGJqvGujt2rAceNH85AGC2cfEE9lefv76oDBkxmIn3lUB2cabFCUzUBK9PEzbS0WUWsVXGdo-pSt8BKTAQ
+2022-11-04 09:33:05,636 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-4] token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjaGlub2NoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NDY1OTE4LCJleHAiOjE2OTg5NDQ0MDB9.5pxocGJqvGujt2rAceNH85AGC2cfEE9lefv76oDBkxmIn3lUB2cabFCUzUBK9PEzbS0WUWsVXGdo-pSt8BKTAQ 
+2022-11-04 09:33:05,642 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-4] token chinochan@gmail.com 
+2022-11-04 09:33:05,643 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] search user by email with user email chinochan@gmail.com 
+2022-11-04 09:33:05,651 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] successful in getting users with email chinochan@gmail.com 
+2022-11-04 09:33:05,652 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] Generate roles by becoming set of simple granted authorities
+2022-11-04 09:33:05,652 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-4] user details chinochan@gmail.com with token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjaGlub2NoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NDY1OTE4LCJleHAiOjE2OTg5NDQ0MDB9.5pxocGJqvGujt2rAceNH85AGC2cfEE9lefv76oDBkxmIn3lUB2cabFCUzUBK9PEzbS0WUWsVXGdo-pSt8BKTAQ 
+2022-11-04 09:33:05,668 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-4] #calling login role
+2022-11-04 09:33:05,751 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] search user by email with user email kaffuchan@gmail.com 
+2022-11-04 09:33:05,757 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] successful in getting users with email kaffuchan@gmail.com 
+2022-11-04 09:33:05,757 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] Generate roles by becoming set of simple granted authorities
+2022-11-04 09:33:05,837 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-4] #login succeess user account kaffuchan@gmail.com 
+2022-11-04 09:33:05,837 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] search user by email with user email kaffuchan@gmail.com 
+2022-11-04 09:33:05,841 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] successful in getting users with email kaffuchan@gmail.com 
+2022-11-04 09:33:05,841 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] Generate roles by becoming set of simple granted authorities
+2022-11-04 09:33:05,841 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-4] #load user kaffuchan@gmail.com details success
+2022-11-04 09:33:05,841 INFO com.coffekyun.cinema.util.JwtUtil [http-nio-8080-exec-4] subject token kaffuchan@gmail.com 
+2022-11-04 09:33:05,878 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-4] success create token
