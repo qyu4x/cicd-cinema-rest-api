@@ -37,3 +37,10 @@
 2022-11-04 09:33:05,841 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-4] #load user kaffuchan@gmail.com details success
 2022-11-04 09:33:05,841 INFO com.coffekyun.cinema.util.JwtUtil [http-nio-8080-exec-4] subject token kaffuchan@gmail.com 
 2022-11-04 09:33:05,878 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-4] success create token
+2022-11-04 10:04:12,341 INFO org.springframework.boot.StartupInfoLogger [main] Starting CinemaRestfulApiApplication using Java 17.0.2 on hikaru with PID 46076 (D:\Development\cicd\ci-cd-cinema-rest-api\target\classes started by MiyukiKoishiro in D:\Development\cicd\ci-cd-cinema-rest-api)
+2022-11-04 10:04:12,343 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-11-04 10:04:12,344 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-04 10:04:25,588 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtAuthRequestFilter' configured for use
+2022-11-04 10:04:26,102 INFO com.coffekyun.cinema.controller.RoleController [main] #calling postInitRoleUserAndAdmin
+2022-11-04 10:04:33,208 INFO com.coffekyun.cinema.controller.RoleController [main] #successfully entered the main user and admin data
+2022-11-04 10:04:35,545 INFO org.springframework.boot.StartupInfoLogger [main] Started CinemaRestfulApiApplication in 23.824 seconds (JVM running for 25.142)
