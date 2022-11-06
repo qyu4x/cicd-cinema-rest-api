@@ -1,92 +1,351 @@
-2022-11-04 09:30:04,896 INFO org.springframework.boot.StartupInfoLogger [main] Starting CinemaRestfulApiApplication using Java 17.0.2 on hikaru with PID 43916 (D:\Development\PRODUCTION\ariqkhoiri_reservasi_bioskop\target\classes started by MiyukiKoishiro in D:\Development\PRODUCTION\ariqkhoiri_reservasi_bioskop)
-2022-11-04 09:30:04,897 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.3, Spring v5.3.22
-2022-11-04 09:30:04,898 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2022-11-04 09:30:10,607 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtAuthRequestFilter' configured for use
-2022-11-04 09:30:11,274 INFO com.coffekyun.cinema.controller.RoleController [main] #calling postInitRoleUserAndAdmin
-2022-11-04 09:30:11,510 WARN com.coffekyun.cinema.service.RoleServiceImpl [main] init role user and admin is available
-2022-11-04 09:30:11,510 INFO com.coffekyun.cinema.controller.RoleController [main] #successfully entered the main user and admin data
-2022-11-04 09:30:14,881 INFO org.springframework.boot.StartupInfoLogger [main] Started CinemaRestfulApiApplication in 10.515 seconds (JVM running for 11.904)
-2022-11-04 09:31:46,177 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] #calling do filter internal
-2022-11-04 09:31:46,178 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] authorization Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NTI4NzA2LCJleHAiOjE2OTkwMzA4MDB9.b81BKiTwk_HATWaiZJr1jYI5a0Y22MbakI8oupDhMr3NGqDQXFMs6sGQEjue822GS9Td6vHF0wSbsT8JJo0oNw
-2022-11-04 09:31:46,178 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NTI4NzA2LCJleHAiOjE2OTkwMzA4MDB9.b81BKiTwk_HATWaiZJr1jYI5a0Y22MbakI8oupDhMr3NGqDQXFMs6sGQEjue822GS9Td6vHF0wSbsT8JJo0oNw 
-2022-11-04 09:31:46,270 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] token aichan@gmail.com 
-2022-11-04 09:31:46,271 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-2] search user by email with user email aichan@gmail.com 
-2022-11-04 09:31:46,301 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-2] successful in getting users with email aichan@gmail.com 
-2022-11-04 09:31:46,303 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-2] Generate roles by becoming set of simple granted authorities
-2022-11-04 09:31:46,304 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] user details aichan@gmail.com with token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NTI4NzA2LCJleHAiOjE2OTkwMzA4MDB9.b81BKiTwk_HATWaiZJr1jYI5a0Y22MbakI8oupDhMr3NGqDQXFMs6sGQEjue822GS9Td6vHF0wSbsT8JJo0oNw 
-2022-11-04 09:31:46,562 INFO com.coffekyun.cinema.controller.UserController [http-nio-8080-exec-2] #calling controller postRequestRegister
-2022-11-04 09:31:46,563 INFO com.coffekyun.cinema.service.UserServiceImpl [http-nio-8080-exec-2] do register new user account
-2022-11-04 09:31:46,755 INFO com.coffekyun.cinema.service.UserServiceImpl [http-nio-8080-exec-2] successfuly register user with email kaffuchan@gmail.com 
-2022-11-04 09:31:46,757 INFO com.coffekyun.cinema.controller.UserController [http-nio-8080-exec-2] #successfully register user with email kaffuchan@gmail.com 
-2022-11-04 09:33:05,634 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-4] #calling do filter internal
-2022-11-04 09:33:05,636 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-4] authorization Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjaGlub2NoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NDY1OTE4LCJleHAiOjE2OTg5NDQ0MDB9.5pxocGJqvGujt2rAceNH85AGC2cfEE9lefv76oDBkxmIn3lUB2cabFCUzUBK9PEzbS0WUWsVXGdo-pSt8BKTAQ
-2022-11-04 09:33:05,636 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-4] token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjaGlub2NoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NDY1OTE4LCJleHAiOjE2OTg5NDQ0MDB9.5pxocGJqvGujt2rAceNH85AGC2cfEE9lefv76oDBkxmIn3lUB2cabFCUzUBK9PEzbS0WUWsVXGdo-pSt8BKTAQ 
-2022-11-04 09:33:05,642 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-4] token chinochan@gmail.com 
-2022-11-04 09:33:05,643 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] search user by email with user email chinochan@gmail.com 
-2022-11-04 09:33:05,651 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] successful in getting users with email chinochan@gmail.com 
-2022-11-04 09:33:05,652 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] Generate roles by becoming set of simple granted authorities
-2022-11-04 09:33:05,652 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-4] user details chinochan@gmail.com with token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjaGlub2NoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NDY1OTE4LCJleHAiOjE2OTg5NDQ0MDB9.5pxocGJqvGujt2rAceNH85AGC2cfEE9lefv76oDBkxmIn3lUB2cabFCUzUBK9PEzbS0WUWsVXGdo-pSt8BKTAQ 
-2022-11-04 09:33:05,668 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-4] #calling login role
-2022-11-04 09:33:05,751 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] search user by email with user email kaffuchan@gmail.com 
-2022-11-04 09:33:05,757 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] successful in getting users with email kaffuchan@gmail.com 
-2022-11-04 09:33:05,757 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] Generate roles by becoming set of simple granted authorities
-2022-11-04 09:33:05,837 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-4] #login succeess user account kaffuchan@gmail.com 
-2022-11-04 09:33:05,837 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] search user by email with user email kaffuchan@gmail.com 
-2022-11-04 09:33:05,841 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] successful in getting users with email kaffuchan@gmail.com 
-2022-11-04 09:33:05,841 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-4] Generate roles by becoming set of simple granted authorities
-2022-11-04 09:33:05,841 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-4] #load user kaffuchan@gmail.com details success
-2022-11-04 09:33:05,841 INFO com.coffekyun.cinema.util.JwtUtil [http-nio-8080-exec-4] subject token kaffuchan@gmail.com 
-2022-11-04 09:33:05,878 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-4] success create token
-2022-11-04 10:04:12,341 INFO org.springframework.boot.StartupInfoLogger [main] Starting CinemaRestfulApiApplication using Java 17.0.2 on hikaru with PID 46076 (D:\Development\cicd\ci-cd-cinema-rest-api\target\classes started by MiyukiKoishiro in D:\Development\cicd\ci-cd-cinema-rest-api)
-2022-11-04 10:04:12,343 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.3, Spring v5.3.22
-2022-11-04 10:04:12,344 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2022-11-04 10:04:25,588 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtAuthRequestFilter' configured for use
-2022-11-04 10:04:26,102 INFO com.coffekyun.cinema.controller.RoleController [main] #calling postInitRoleUserAndAdmin
-2022-11-04 10:04:33,208 INFO com.coffekyun.cinema.controller.RoleController [main] #successfully entered the main user and admin data
-2022-11-04 10:04:35,545 INFO org.springframework.boot.StartupInfoLogger [main] Started CinemaRestfulApiApplication in 23.824 seconds (JVM running for 25.142)
-2022-11-04 10:37:21,275 INFO org.springframework.boot.StartupInfoLogger [main] Starting CinemaRestfulApiApplication using Java 17.0.2 on hikaru with PID 27904 (D:\Development\cicd\ci-cd-cinema-rest-api\target\classes started by MiyukiKoishiro in D:\Development\cicd\ci-cd-cinema-rest-api)
-2022-11-04 10:37:21,278 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.3, Spring v5.3.22
-2022-11-04 10:37:21,280 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2022-11-04 10:37:37,380 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtAuthRequestFilter' configured for use
-2022-11-04 10:37:37,909 INFO com.coffekyun.cinema.controller.RoleController [main] #calling postInitRoleUserAndAdmin
-2022-11-04 10:37:38,897 WARN com.coffekyun.cinema.service.RoleServiceImpl [main] init role user and admin is available
-2022-11-04 10:37:38,897 INFO com.coffekyun.cinema.controller.RoleController [main] #successfully entered the main user and admin data
-2022-11-04 10:37:41,526 INFO org.springframework.boot.StartupInfoLogger [main] Started CinemaRestfulApiApplication in 20.808 seconds (JVM running for 22.23)
-2022-11-04 10:38:00,449 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] #calling do filter internal
-2022-11-04 10:38:00,450 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] authorization Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NTI4NzA2LCJleHAiOjE2OTkwMzA4MDB9.b81BKiTwk_HATWaiZJr1jYI5a0Y22MbakI8oupDhMr3NGqDQXFMs6sGQEjue822GS9Td6vHF0wSbsT8JJo0oNw
-2022-11-04 10:38:00,450 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NTI4NzA2LCJleHAiOjE2OTkwMzA4MDB9.b81BKiTwk_HATWaiZJr1jYI5a0Y22MbakI8oupDhMr3NGqDQXFMs6sGQEjue822GS9Td6vHF0wSbsT8JJo0oNw 
-2022-11-04 10:38:00,518 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] token aichan@gmail.com 
-2022-11-04 10:38:00,518 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-2] search user by email with user email aichan@gmail.com 
-2022-11-04 10:38:01,169 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-2] successful in getting users with email aichan@gmail.com 
-2022-11-04 10:38:01,170 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-2] Generate roles by becoming set of simple granted authorities
-2022-11-04 10:38:01,171 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] user details aichan@gmail.com with token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NTI4NzA2LCJleHAiOjE2OTkwMzA4MDB9.b81BKiTwk_HATWaiZJr1jYI5a0Y22MbakI8oupDhMr3NGqDQXFMs6sGQEjue822GS9Td6vHF0wSbsT8JJo0oNw 
-2022-11-04 10:38:01,324 INFO com.coffekyun.cinema.controller.UserController [http-nio-8080-exec-2] #calling controller postRequestRegister
-2022-11-04 10:38:01,324 INFO com.coffekyun.cinema.service.UserServiceImpl [http-nio-8080-exec-2] do register new user account
-2022-11-04 10:38:03,566 INFO com.coffekyun.cinema.service.UserServiceImpl [http-nio-8080-exec-2] successfuly register user with email kaffuchan@gmail.com 
-2022-11-04 10:38:03,567 INFO com.coffekyun.cinema.controller.UserController [http-nio-8080-exec-2] #successfully register user with email kaffuchan@gmail.com 
-2022-11-04 10:38:12,814 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-3] #calling do filter internal
-2022-11-04 10:38:12,814 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-3] authorization Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjaGlub2NoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NDY1OTE4LCJleHAiOjE2OTg5NDQ0MDB9.5pxocGJqvGujt2rAceNH85AGC2cfEE9lefv76oDBkxmIn3lUB2cabFCUzUBK9PEzbS0WUWsVXGdo-pSt8BKTAQ
-2022-11-04 10:38:12,815 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-3] token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjaGlub2NoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NDY1OTE4LCJleHAiOjE2OTg5NDQ0MDB9.5pxocGJqvGujt2rAceNH85AGC2cfEE9lefv76oDBkxmIn3lUB2cabFCUzUBK9PEzbS0WUWsVXGdo-pSt8BKTAQ 
-2022-11-04 10:38:12,817 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-3] token chinochan@gmail.com 
-2022-11-04 10:38:12,817 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] search user by email with user email chinochan@gmail.com 
-2022-11-04 10:38:13,439 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] successful in getting users with email chinochan@gmail.com 
-2022-11-04 10:38:13,439 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] Generate roles by becoming set of simple granted authorities
-2022-11-04 10:38:13,439 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-3] user details chinochan@gmail.com with token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjaGlub2NoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NDY1OTE4LCJleHAiOjE2OTg5NDQ0MDB9.5pxocGJqvGujt2rAceNH85AGC2cfEE9lefv76oDBkxmIn3lUB2cabFCUzUBK9PEzbS0WUWsVXGdo-pSt8BKTAQ 
-2022-11-04 10:38:13,446 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-3] #calling login role
-2022-11-04 10:38:13,518 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] search user by email with user email kaffuchan@gmail.com 
-2022-11-04 10:38:13,932 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] successful in getting users with email kaffuchan@gmail.com 
-2022-11-04 10:38:13,932 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] Generate roles by becoming set of simple granted authorities
-2022-11-04 10:38:14,003 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-3] #login succeess user account kaffuchan@gmail.com 
-2022-11-04 10:38:14,003 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] search user by email with user email kaffuchan@gmail.com 
-2022-11-04 10:38:14,407 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] successful in getting users with email kaffuchan@gmail.com 
-2022-11-04 10:38:14,407 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] Generate roles by becoming set of simple granted authorities
-2022-11-04 10:38:14,408 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-3] #load user kaffuchan@gmail.com details success
-2022-11-04 10:38:14,408 INFO com.coffekyun.cinema.util.JwtUtil [http-nio-8080-exec-3] subject token kaffuchan@gmail.com 
-2022-11-04 10:38:14,828 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-3] success create token
-2022-11-04 10:51:02,080 INFO org.springframework.boot.StartupInfoLogger [main] Starting CinemaRestfulApiApplicationTests using Java 17.0.2 on hikaru with PID 52416 (started by MiyukiKoishiro in D:\Development\cicd\ci-cd-cinema-rest-api)
-2022-11-04 10:51:02,083 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.3, Spring v5.3.22
-2022-11-04 10:51:02,084 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2022-11-04 10:51:20,654 INFO com.coffekyun.cinema.controller.RoleController [main] #calling postInitRoleUserAndAdmin
-2022-11-04 10:51:21,657 WARN com.coffekyun.cinema.service.RoleServiceImpl [main] init role user and admin is available
-2022-11-04 10:51:21,658 INFO com.coffekyun.cinema.controller.RoleController [main] #successfully entered the main user and admin data
-2022-11-04 10:51:26,467 INFO org.springframework.boot.StartupInfoLogger [main] Started CinemaRestfulApiApplicationTests in 24.754 seconds (JVM running for 26.22)
+2022-11-05 08:10:12,488 INFO org.springframework.boot.StartupInfoLogger [main] Starting CinemaRestfulApiApplication using Java 17.0.2 on hikaru with PID 31812 (D:\Development\cicd\cicd-cinema-rest-api\target\classes started by MiyukiKoishiro in D:\Development\cicd\cicd-cinema-rest-api)
+2022-11-05 08:10:12,490 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-11-05 08:10:12,491 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-05 08:10:28,683 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtAuthRequestFilter' configured for use
+2022-11-05 08:10:29,233 INFO com.coffekyun.cinema.controller.RoleController [main] #calling postInitRoleUserAndAdmin
+2022-11-05 08:10:30,200 WARN com.coffekyun.cinema.service.RoleServiceImpl [main] init role user and admin is available
+2022-11-05 08:10:30,201 INFO com.coffekyun.cinema.controller.RoleController [main] #successfully entered the main user and admin data
+2022-11-05 08:10:30,324 INFO com.coffekyun.cinema.firebase.FirebaseCloudMessagingInitializer [main] Firebase application has been initialized
+2022-11-05 08:10:36,487 INFO org.springframework.boot.StartupInfoLogger [main] Started CinemaRestfulApiApplication in 24.466 seconds (JVM running for 26.641)
+2022-11-05 08:11:17,057 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-3] #calling do filter internal
+2022-11-05 08:11:17,059 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-3] authorization null
+2022-11-05 08:12:37,324 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] #calling do filter internal
+2022-11-05 08:12:37,325 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] authorization null
+2022-11-05 08:15:33,176 INFO org.springframework.boot.StartupInfoLogger [main] Starting CinemaRestfulApiApplication using Java 17.0.2 on hikaru with PID 1076 (D:\Development\cicd\cicd-cinema-rest-api\target\classes started by MiyukiKoishiro in D:\Development\cicd\cicd-cinema-rest-api)
+2022-11-05 08:15:33,178 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-11-05 08:15:33,179 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-05 08:15:50,881 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtAuthRequestFilter' configured for use
+2022-11-05 08:15:51,407 INFO com.coffekyun.cinema.controller.RoleController [main] #calling postInitRoleUserAndAdmin
+2022-11-05 08:15:52,343 WARN com.coffekyun.cinema.service.RoleServiceImpl [main] init role user and admin is available
+2022-11-05 08:15:52,344 INFO com.coffekyun.cinema.controller.RoleController [main] #successfully entered the main user and admin data
+2022-11-05 08:15:52,456 INFO com.coffekyun.cinema.firebase.FirebaseCloudMessagingInitializer [main] Firebase application has been initialized
+2022-11-05 08:15:55,048 INFO org.springframework.boot.StartupInfoLogger [main] Started CinemaRestfulApiApplication in 22.73 seconds (JVM running for 24.755)
+2022-11-05 08:16:17,418 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-1] #calling do filter internal
+2022-11-05 08:16:17,419 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-1] authorization null
+2022-11-05 08:16:17,476 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] #calling do filter internal
+2022-11-05 08:16:17,476 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-8] #calling do filter internal
+2022-11-05 08:16:17,476 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-2] authorization null
+2022-11-05 08:16:17,476 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-8] authorization null
+2022-11-05 08:16:17,477 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-3] #calling do filter internal
+2022-11-05 08:16:17,478 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-3] authorization null
+2022-11-05 08:16:17,492 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-5] #calling do filter internal
+2022-11-05 08:16:17,493 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-5] authorization null
+2022-11-05 08:16:17,494 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-7] #calling do filter internal
+2022-11-05 08:16:17,495 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-7] authorization null
+2022-11-05 08:16:17,688 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-4] #calling do filter internal
+2022-11-05 08:16:17,689 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-4] authorization null
+2022-11-05 08:16:17,706 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-9] #calling do filter internal
+2022-11-05 08:16:17,707 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-9] authorization null
+2022-11-05 08:16:17,707 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-6] #calling do filter internal
+2022-11-05 08:16:17,707 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-6] authorization null
+2022-11-05 08:16:17,755 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-10] #calling do filter internal
+2022-11-05 08:16:17,756 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-10] authorization null
+2022-11-05 08:16:58,106 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-3] #calling do filter internal
+2022-11-05 08:16:58,107 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-3] authorization null
+2022-11-05 08:16:58,116 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-3] #calling login role
+2022-11-05 08:16:58,191 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] search user by email with user email aichan@gmail.com 
+2022-11-05 08:16:58,829 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] successful in getting users with email aichan@gmail.com 
+2022-11-05 08:16:58,831 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] Generate roles by becoming set of simple granted authorities
+2022-11-05 08:16:58,903 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-3] #login succeess user account aichan@gmail.com 
+2022-11-05 08:16:58,904 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] search user by email with user email aichan@gmail.com 
+2022-11-05 08:16:59,301 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] successful in getting users with email aichan@gmail.com 
+2022-11-05 08:16:59,302 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-3] Generate roles by becoming set of simple granted authorities
+2022-11-05 08:16:59,302 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-3] #load user aichan@gmail.com details success
+2022-11-05 08:16:59,302 INFO com.coffekyun.cinema.util.JwtUtil [http-nio-8080-exec-3] subject token aichan@gmail.com 
+2022-11-05 08:16:59,734 INFO com.coffekyun.cinema.controller.JwtAuthController [http-nio-8080-exec-3] success create token
+2022-11-05 08:18:33,276 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-6] #calling do filter internal
+2022-11-05 08:18:33,276 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-6] authorization Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NjExMDE5LCJleHAiOjE2OTkxMTcyMDB9.MDZlr49suU84_VBWrJAVpbjlW6Oma0HwnWRNfr9XgAukzGneqFKw4ikbK0m1u-mXsWAbgy4MegwDXWfBmSwZ5g
+2022-11-05 08:18:33,276 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-6] token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NjExMDE5LCJleHAiOjE2OTkxMTcyMDB9.MDZlr49suU84_VBWrJAVpbjlW6Oma0HwnWRNfr9XgAukzGneqFKw4ikbK0m1u-mXsWAbgy4MegwDXWfBmSwZ5g 
+2022-11-05 08:18:33,299 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-6] token aichan@gmail.com 
+2022-11-05 08:18:33,299 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-6] search user by email with user email aichan@gmail.com 
+2022-11-05 08:18:33,923 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-6] successful in getting users with email aichan@gmail.com 
+2022-11-05 08:18:33,924 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-6] Generate roles by becoming set of simple granted authorities
+2022-11-05 08:18:33,924 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-6] user details aichan@gmail.com with token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NjExMDE5LCJleHAiOjE2OTkxMTcyMDB9.MDZlr49suU84_VBWrJAVpbjlW6Oma0HwnWRNfr9XgAukzGneqFKw4ikbK0m1u-mXsWAbgy4MegwDXWfBmSwZ5g 
+2022-11-05 08:19:07,401 INFO org.springframework.boot.StartupInfoLogger [main] Starting CinemaRestfulApiApplication using Java 17.0.2 on hikaru with PID 11232 (D:\Development\cicd\cicd-cinema-rest-api\target\classes started by MiyukiKoishiro in D:\Development\cicd\cicd-cinema-rest-api)
+2022-11-05 08:19:07,402 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-11-05 08:19:07,403 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-05 08:19:23,041 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtAuthRequestFilter' configured for use
+2022-11-05 08:19:23,651 INFO com.coffekyun.cinema.controller.RoleController [main] #calling postInitRoleUserAndAdmin
+2022-11-05 08:19:25,781 WARN com.coffekyun.cinema.service.RoleServiceImpl [main] init role user and admin is available
+2022-11-05 08:19:25,782 INFO com.coffekyun.cinema.controller.RoleController [main] #successfully entered the main user and admin data
+2022-11-05 08:19:25,893 INFO com.coffekyun.cinema.firebase.FirebaseCloudMessagingInitializer [main] Firebase application has been initialized
+2022-11-05 08:19:29,333 INFO org.springframework.boot.StartupInfoLogger [main] Started CinemaRestfulApiApplication in 22.391 seconds (JVM running for 23.567)
+2022-11-05 08:19:41,015 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-1] #calling do filter internal
+2022-11-05 08:19:41,015 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-1] authorization Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NjExMDE5LCJleHAiOjE2OTkxMTcyMDB9.MDZlr49suU84_VBWrJAVpbjlW6Oma0HwnWRNfr9XgAukzGneqFKw4ikbK0m1u-mXsWAbgy4MegwDXWfBmSwZ5g
+2022-11-05 08:19:41,016 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-1] token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NjExMDE5LCJleHAiOjE2OTkxMTcyMDB9.MDZlr49suU84_VBWrJAVpbjlW6Oma0HwnWRNfr9XgAukzGneqFKw4ikbK0m1u-mXsWAbgy4MegwDXWfBmSwZ5g 
+2022-11-05 08:19:41,079 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-1] token aichan@gmail.com 
+2022-11-05 08:19:41,079 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-1] search user by email with user email aichan@gmail.com 
+2022-11-05 08:19:41,739 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-1] successful in getting users with email aichan@gmail.com 
+2022-11-05 08:19:41,740 INFO com.coffekyun.cinema.service.JwtService [http-nio-8080-exec-1] Generate roles by becoming set of simple granted authorities
+2022-11-05 08:19:41,742 INFO com.coffekyun.cinema.security.JwtAuthRequestFilter [http-nio-8080-exec-1] user details aichan@gmail.com with token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaWNoYW5AZ21haWwuY29tIiwiaWF0IjoxNjY3NjExMDE5LCJleHAiOjE2OTkxMTcyMDB9.MDZlr49suU84_VBWrJAVpbjlW6Oma0HwnWRNfr9XgAukzGneqFKw4ikbK0m1u-mXsWAbgy4MegwDXWfBmSwZ5g 
+2022-11-05 08:19:41,828 INFO com.coffekyun.cinema.controller.PushNotificationController [http-nio-8080-exec-1] #calling controller pushNotificationWithToken
+2022-11-05 08:19:42,499 INFO com.coffekyun.cinema.firebase.FirebaseCloudMessagingService [http-nio-8080-exec-1] Sent message to token. Device token: c0vROoyOQ6yhWZmjgrAFN1:APA91bFLskZf1K0YVGgnigu0vgz_q7FZdAq7szOATCl-bJ941UoYyAbhzonTA51EL-Y4b0n_eShj3W0b3Dmkzaoyb7ygsa64Ngb59cKjsHyHuwzj-nlEswEe421yXh7iJuvNFI9U8usm ,projects/notification-springboot/messages/0:1667611181879840%2adabfdf2adabfdf message {
+  "notification": {
+    "title": "test",
+    "body": "test send notification"
+  },
+  "androidConfig": {
+    "priority": "high",
+    "ttl": "120s",
+    "notification": {
+      "color": "#FFFF00",
+      "sound": "default"
+    }
+  },
+  "apnsConfig": {
+    "payload": {
+      "aps": {}
+    }
+  },
+  "token": "c0vROoyOQ6yhWZmjgrAFN1:APA91bFLskZf1K0YVGgnigu0vgz_q7FZdAq7szOATCl-bJ941UoYyAbhzonTA51EL-Y4b0n_eShj3W0b3Dmkzaoyb7ygsa64Ngb59cKjsHyHuwzj-nlEswEe421yXh7iJuvNFI9U8usm"
+} 
+2022-11-05 08:19:42,500 INFO com.coffekyun.cinema.controller.PushNotificationController [http-nio-8080-exec-1] Successfully send notification to device token c0vROoyOQ6yhWZmjgrAFN1:APA91bFLskZf1K0YVGgnigu0vgz_q7FZdAq7szOATCl-bJ941UoYyAbhzonTA51EL-Y4b0n_eShj3W0b3Dmkzaoyb7ygsa64Ngb59cKjsHyHuwzj-nlEswEe421yXh7iJuvNFI9U8usm 
+2022-11-05 09:38:33,396 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 09:44:44,403 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 09:56:23,456 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 10:01:22,896 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 10:35:47,685 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 10:35:47,762 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 10:41:34,474 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 10:41:34,548 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 10:46:09,443 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 10:46:09,517 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 10:55:36,183 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 10:57:37,862 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 11:03:48,685 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 11:05:36,123 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 11:07:02,939 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 11:08:30,823 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 11:15:40,510 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 11:15:40,591 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 11:16:12,539 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 11:16:12,644 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 11:16:55,101 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 11:16:55,177 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 11:19:00,539 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 11:19:00,620 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 11:19:56,344 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 11:19:56,418 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 11:40:22,914 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfully delet user with id id
+2022-11-05 11:42:34,201 INFO com.coffekyun.cinema.service.UserServiceImpl [main] user with id id not found
+2022-11-05 11:58:57,512 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do find user by id user-id 
+2022-11-05 12:05:49,444 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do find user by id user-id 
+2022-11-05 14:01:14,514 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do find user by id user-id 
+2022-11-05 14:01:54,725 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do find user by id user-id 
+2022-11-05 14:01:54,732 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfully get user with id user-id
+2022-11-05 14:02:04,722 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do find user by id user-id 
+2022-11-05 14:02:04,734 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfully get user with id user-id
+2022-11-05 14:04:13,420 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do find user by id user-id 
+2022-11-05 14:04:13,427 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfully get user with id user-id
+2022-11-05 14:06:55,420 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do find user by id not-found 
+2022-11-05 14:06:55,427 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with id not-found not found
+2022-11-05 15:54:24,455 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 15:54:24,530 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 15:55:22,793 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 15:55:22,872 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 15:58:24,902 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 15:58:24,980 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 15:59:16,585 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 15:59:16,663 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 16:03:15,588 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 16:03:15,598 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with email kaguyachan@gmail.com is already exist
+2022-11-05 16:04:00,449 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 16:04:00,523 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 16:17:34,364 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id 1 
+2022-11-05 16:17:34,374 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id 1
+2022-11-05 16:19:02,546 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id 1 
+2022-11-05 16:19:02,552 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id 1
+2022-11-05 16:33:36,023 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id 1 
+2022-11-05 16:33:36,030 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id 1
+2022-11-05 16:42:34,658 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id 1 
+2022-11-05 16:42:34,856 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly update user with id 1 
+2022-11-05 16:43:57,648 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id 1 
+2022-11-05 16:43:57,844 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly update user with id 1 
+2022-11-05 16:47:00,427 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id 1 
+2022-11-05 16:47:00,632 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly update user with id 1 
+2022-11-05 16:48:53,906 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id random-id 
+2022-11-05 16:48:54,095 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly update user with id random-id 
+2022-11-05 16:50:49,487 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id random-id 
+2022-11-05 16:50:49,686 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly update user with id random-id 
+2022-11-05 16:53:53,771 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id random-id 
+2022-11-05 16:53:53,777 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id random-id
+2022-11-05 16:54:46,448 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id random-id 
+2022-11-05 16:54:46,454 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id random-id
+2022-11-05 16:56:02,928 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id random-id 
+2022-11-05 16:56:02,935 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id random-id
+2022-11-05 16:59:49,463 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id not-found 
+2022-11-05 17:02:04,123 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id not-found 
+2022-11-05 17:02:04,131 INFO com.coffekyun.cinema.service.UserServiceImpl [main] user id not-found not found
+2022-11-05 17:02:29,850 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id not-found 
+2022-11-05 17:02:29,856 INFO com.coffekyun.cinema.service.UserServiceImpl [main] user id not-found not found
+2022-11-05 17:03:40,465 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id not-found 
+2022-11-05 17:03:40,471 INFO com.coffekyun.cinema.service.UserServiceImpl [main] user id not-found not found
+2022-11-05 18:25:01,343 INFO com.coffekyun.cinema.service.SeatServiceImpl [main] carry out the process of adding seats with seat code A1 
+2022-11-05 18:25:01,353 INFO com.coffekyun.cinema.service.SeatServiceImpl [main] succesfully added seat with seat code A1 
+2022-11-05 18:26:57,837 INFO com.coffekyun.cinema.service.SeatServiceImpl [main] carry out the process of adding seats with seat code A1 
+2022-11-05 18:26:57,855 WARN com.coffekyun.cinema.service.SeatServiceImpl [main] seat with code A1 is already exist
+2022-11-05 18:51:51,931 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 18:53:08,378 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 18:55:05,807 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 18:55:05,817 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] studio data and seats have been entered
+2022-11-05 18:57:43,288 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 18:57:43,295 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] studio data and seats have been entered
+2022-11-05 18:58:38,165 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 18:58:38,183 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] studio data and seats have been entered
+2022-11-05 18:59:12,356 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 18:59:12,362 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] studio data and seats have been entered
+2022-11-05 19:00:07,964 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:00:07,970 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] studio data and seats have been entered
+2022-11-05 19:00:36,319 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:00:36,328 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] studio data and seats have been entered
+2022-11-05 19:01:59,796 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:01:59,802 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] studio data and seats have been entered
+2022-11-05 19:05:24,766 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:05:24,772 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] successfully added seats and studios
+2022-11-05 19:11:29,035 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:11:29,041 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] studio data and seats have been entered
+2022-11-05 19:13:32,923 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:13:32,931 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] successfully added seats and studios
+2022-11-05 19:16:31,200 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:16:31,207 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] successfully added seats and studios
+2022-11-05 19:17:23,318 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:17:23,325 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] studio data and seats have been entered
+2022-11-05 19:17:43,931 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:17:43,937 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] successfully added seats and studios
+2022-11-05 19:18:31,469 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:18:31,477 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] successfully added seats and studios
+2022-11-05 19:19:29,203 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:19:29,211 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] successfully added seats and studios
+2022-11-05 19:19:49,935 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:19:49,941 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] studio data and seats have been entered
+2022-11-05 19:20:56,196 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:20:56,203 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] successfully added seats and studios
+2022-11-05 19:53:08,842 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 19:53:08,848 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] empty seats or studios can't be added
+2022-11-05 20:00:52,024 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] find seat if status true
+2022-11-05 20:00:52,040 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] successfuly get all seat with status true 
+2022-11-05 20:25:21,346 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] check the seats and studios that have been booked
+2022-11-05 20:25:21,358 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] seat or studio is not found
+2022-11-05 20:28:03,520 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] check the seats and studios that have been booked
+2022-11-05 20:28:03,526 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] seat or studio is not found
+2022-11-05 20:30:35,417 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] check the seats and studios that have been booked
+2022-11-05 20:32:48,710 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] check the seats and studios that have been booked
+2022-11-05 20:32:48,716 ERROR com.coffekyun.cinema.service.SeatDetailServiceImpl [main] the seat or studio has been ordered
+2022-11-05 20:49:22,605 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] find seat if status true
+2022-11-05 20:49:22,615 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] successfuly get all seat with status true 
+2022-11-05 20:49:22,642 WARN com.coffekyun.cinema.service.SeatDetailServiceImpl [main] Seat can not be more than quantity
+2022-11-05 20:49:22,646 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] check the seats and studios that have been booked
+2022-11-05 20:49:22,648 ERROR com.coffekyun.cinema.service.SeatDetailServiceImpl [main] the seat or studio has been ordered
+2022-11-05 20:49:22,656 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] check the seats and studios that have been booked
+2022-11-05 20:49:22,664 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 20:49:22,665 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] empty seats or studios can't be added
+2022-11-05 20:49:22,675 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 20:49:22,676 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] studio data and seats have been entered
+2022-11-05 20:49:22,682 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] check the seats and studios that have been booked
+2022-11-05 20:49:22,683 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] seat or studio is not found
+2022-11-05 20:49:22,689 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 20:49:22,690 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] successfully added seats and studios
+2022-11-05 20:50:13,319 INFO com.coffekyun.cinema.service.SeatServiceImpl [main] carry out the process of adding seats with seat code A1 
+2022-11-05 20:50:13,326 WARN com.coffekyun.cinema.service.SeatServiceImpl [main] seat with code A1 is already exist
+2022-11-05 20:50:13,343 INFO com.coffekyun.cinema.service.SeatServiceImpl [main] carry out the process of adding seats with seat code A1 
+2022-11-05 20:50:13,344 INFO com.coffekyun.cinema.service.SeatServiceImpl [main] succesfully added seat with seat code A1 
+2022-11-05 20:50:40,272 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfully delet user with id id
+2022-11-05 20:50:40,301 INFO com.coffekyun.cinema.service.UserServiceImpl [main] user with id notfound not found
+2022-11-05 20:50:40,309 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 20:50:40,310 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with email kaguyachan@gmail.com is already exist
+2022-11-05 20:50:40,394 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 20:50:40,467 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 20:50:40,476 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id random-id 
+2022-11-05 20:50:40,617 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly update user with id random-id 
+2022-11-05 20:50:40,624 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id not-found 
+2022-11-05 20:50:40,624 INFO com.coffekyun.cinema.service.UserServiceImpl [main] user id not-found not found
+2022-11-05 20:50:40,630 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do find user by id not-found 
+2022-11-05 20:50:40,630 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with id not-found not found
+2022-11-05 20:50:40,635 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do find user by id user-id 
+2022-11-05 20:50:40,636 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfully get user with id user-id
+2022-11-05 20:50:40,642 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id random-id 
+2022-11-05 20:50:40,642 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id random-id
+2022-11-05 20:52:00,679 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfully delet user with id id
+2022-11-05 20:52:00,714 INFO com.coffekyun.cinema.service.UserServiceImpl [main] user with id notfound not found
+2022-11-05 20:52:00,722 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 20:52:00,722 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with email kaguyachan@gmail.com is already exist
+2022-11-05 20:52:00,792 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 20:52:00,865 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 20:52:00,872 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id random-id 
+2022-11-05 20:52:00,998 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly update user with id random-id 
+2022-11-05 20:52:01,003 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id not-found 
+2022-11-05 20:52:01,004 INFO com.coffekyun.cinema.service.UserServiceImpl [main] user id not-found not found
+2022-11-05 20:52:01,008 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do find user by id not-found 
+2022-11-05 20:52:01,009 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with id not-found not found
+2022-11-05 20:52:01,013 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do find user by id user-id 
+2022-11-05 20:52:01,014 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfully get user with id user-id
+2022-11-05 20:52:01,018 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id random-id 
+2022-11-05 20:52:01,019 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id random-id
+2022-11-05 21:10:29,716 INFO com.coffekyun.cinema.service.ScheduleServiceImpl [main] do find schedule by order id
+2022-11-05 21:11:10,880 INFO com.coffekyun.cinema.service.ScheduleServiceImpl [main] do find schedule by order id
+2022-11-05 21:13:37,012 INFO com.coffekyun.cinema.service.ScheduleServiceImpl [main] do find schedule by order id
+2022-11-05 21:13:37,019 ERROR com.coffekyun.cinema.service.ScheduleServiceImpl [main] scedule with id schedule-anime not found
+2022-11-05 21:13:53,430 INFO com.coffekyun.cinema.service.ScheduleServiceImpl [main] do find schedule by order id
+2022-11-05 21:13:53,436 ERROR com.coffekyun.cinema.service.ScheduleServiceImpl [main] scedule with id schedule-anime not found
+2022-11-05 21:13:53,462 INFO com.coffekyun.cinema.service.ScheduleServiceImpl [main] do find schedule by order id
+2022-11-05 21:29:42,320 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] make an order for user id user-id 
+2022-11-05 21:29:42,373 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] successfully placed an order for user id user-id 
+2022-11-05 21:31:27,691 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] make an order for user id user-id 
+2022-11-05 21:31:27,748 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] successfully placed an order for user id user-id 
+2022-11-05 21:31:48,517 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] make an order for user id null 
+2022-11-05 21:31:48,568 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] successfully placed an order for user id null 
+2022-11-05 21:32:41,098 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] make an order for user id null 
+2022-11-05 21:32:41,153 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] successfully placed an order for user id null 
+2022-11-05 21:34:39,608 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] make an order for user id user-id 
+2022-11-05 21:34:39,667 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] successfully placed an order for user id user-id 
+2022-11-05 21:38:38,064 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] do take orders based on user id order-1 
+2022-11-05 21:38:38,071 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] successfully found order with user id order-1 
+2022-11-05 21:39:13,284 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] make an order for user id user-id 
+2022-11-05 21:39:13,362 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] successfully placed an order for user id user-id 
+2022-11-05 21:40:37,348 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] do take orders based on user id order-1 
+2022-11-05 21:40:37,354 WARN com.coffekyun.cinema.service.OrderServiceImpl [main] user with id order-1 is not found
+2022-11-05 21:40:49,429 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] make an order for user id user-id 
+2022-11-05 21:40:49,502 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] successfully placed an order for user id user-id 
+2022-11-05 21:40:49,544 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] do take orders based on user id order-1 
+2022-11-05 21:40:49,545 WARN com.coffekyun.cinema.service.OrderServiceImpl [main] user with id order-1 is not found
+2022-11-05 21:40:49,553 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] do take orders based on user id order-1 
+2022-11-05 21:40:49,554 INFO com.coffekyun.cinema.service.OrderServiceImpl [main] successfully found order with user id order-1 
+2022-11-05 21:41:12,894 INFO com.coffekyun.cinema.service.ScheduleServiceImpl [main] do find schedule by order id
+2022-11-05 21:41:12,901 ERROR com.coffekyun.cinema.service.ScheduleServiceImpl [main] scedule with id schedule-anime not found
+2022-11-05 21:41:12,926 INFO com.coffekyun.cinema.service.ScheduleServiceImpl [main] do find schedule by order id
+2022-11-05 21:41:25,618 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] find seat if status true
+2022-11-05 21:41:25,625 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] successfuly get all seat with status true 
+2022-11-05 21:41:25,651 WARN com.coffekyun.cinema.service.SeatDetailServiceImpl [main] Seat can not be more than quantity
+2022-11-05 21:41:25,656 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] check the seats and studios that have been booked
+2022-11-05 21:41:25,658 ERROR com.coffekyun.cinema.service.SeatDetailServiceImpl [main] the seat or studio has been ordered
+2022-11-05 21:41:25,664 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] check the seats and studios that have been booked
+2022-11-05 21:41:25,673 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 21:41:25,673 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] empty seats or studios can't be added
+2022-11-05 21:41:25,680 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 21:41:25,680 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] studio data and seats have been entered
+2022-11-05 21:41:25,684 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] check the seats and studios that have been booked
+2022-11-05 21:41:25,685 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] seat or studio is not found
+2022-11-05 21:41:25,689 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] do add a seat with seat code A1 
+2022-11-05 21:41:25,689 INFO com.coffekyun.cinema.service.SeatDetailServiceImpl [main] successfully added seats and studios
+2022-11-05 21:41:38,665 INFO com.coffekyun.cinema.service.SeatServiceImpl [main] carry out the process of adding seats with seat code A1 
+2022-11-05 21:41:38,671 WARN com.coffekyun.cinema.service.SeatServiceImpl [main] seat with code A1 is already exist
+2022-11-05 21:41:38,689 INFO com.coffekyun.cinema.service.SeatServiceImpl [main] carry out the process of adding seats with seat code A1 
+2022-11-05 21:41:38,690 INFO com.coffekyun.cinema.service.SeatServiceImpl [main] succesfully added seat with seat code A1 
+2022-11-05 21:41:51,008 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 21:41:51,083 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 21:42:27,063 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfully delet user with id id
+2022-11-05 21:42:27,090 INFO com.coffekyun.cinema.service.UserServiceImpl [main] user with id notfound not found
+2022-11-05 21:42:27,098 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 21:42:27,098 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with email kaguyachan@gmail.com is already exist
+2022-11-05 21:42:27,164 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do register new user account
+2022-11-05 21:42:27,232 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly register user with email kaguyachan@gmail.com 
+2022-11-05 21:42:27,240 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id random-id 
+2022-11-05 21:42:27,377 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfuly update user with id random-id 
+2022-11-05 21:42:27,383 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id not-found 
+2022-11-05 21:42:27,383 INFO com.coffekyun.cinema.service.UserServiceImpl [main] user id not-found not found
+2022-11-05 21:42:27,387 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do find user by id not-found 
+2022-11-05 21:42:27,388 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with id not-found not found
+2022-11-05 21:42:27,392 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do find user by id user-id 
+2022-11-05 21:42:27,392 INFO com.coffekyun.cinema.service.UserServiceImpl [main] successfully get user with id user-id
+2022-11-05 21:42:27,396 INFO com.coffekyun.cinema.service.UserServiceImpl [main] do upadate user with user id random-id 
+2022-11-05 21:42:27,397 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id random-id

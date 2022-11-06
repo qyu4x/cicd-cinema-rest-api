@@ -1,3 +1,33 @@
-2022-11-04 09:30:11,510 WARN com.coffekyun.cinema.service.RoleServiceImpl [main] init role user and admin is available
-2022-11-04 10:37:38,897 WARN com.coffekyun.cinema.service.RoleServiceImpl [main] init role user and admin is available
-2022-11-04 10:51:21,657 WARN com.coffekyun.cinema.service.RoleServiceImpl [main] init role user and admin is available
+2022-11-05 08:10:30,200 WARN com.coffekyun.cinema.service.RoleServiceImpl [main] init role user and admin is available
+2022-11-05 08:15:52,343 WARN com.coffekyun.cinema.service.RoleServiceImpl [main] init role user and admin is available
+2022-11-05 08:19:25,781 WARN com.coffekyun.cinema.service.RoleServiceImpl [main] init role user and admin is available
+2022-11-05 14:06:55,427 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with id not-found not found
+2022-11-05 16:03:15,598 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with email kaguyachan@gmail.com is already exist
+2022-11-05 16:17:34,374 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id 1
+2022-11-05 16:19:02,552 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id 1
+2022-11-05 16:33:36,030 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id 1
+2022-11-05 16:53:53,777 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id random-id
+2022-11-05 16:54:46,454 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id random-id
+2022-11-05 16:56:02,935 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id random-id
+2022-11-05 18:26:57,855 WARN com.coffekyun.cinema.service.SeatServiceImpl [main] seat with code A1 is already exist
+2022-11-05 20:32:48,716 ERROR com.coffekyun.cinema.service.SeatDetailServiceImpl [main] the seat or studio has been ordered
+2022-11-05 20:49:22,642 WARN com.coffekyun.cinema.service.SeatDetailServiceImpl [main] Seat can not be more than quantity
+2022-11-05 20:49:22,648 ERROR com.coffekyun.cinema.service.SeatDetailServiceImpl [main] the seat or studio has been ordered
+2022-11-05 20:50:13,326 WARN com.coffekyun.cinema.service.SeatServiceImpl [main] seat with code A1 is already exist
+2022-11-05 20:50:40,310 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with email kaguyachan@gmail.com is already exist
+2022-11-05 20:50:40,630 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with id not-found not found
+2022-11-05 20:50:40,642 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id random-id
+2022-11-05 20:52:00,722 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with email kaguyachan@gmail.com is already exist
+2022-11-05 20:52:01,009 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with id not-found not found
+2022-11-05 20:52:01,019 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id random-id
+2022-11-05 21:13:37,019 ERROR com.coffekyun.cinema.service.ScheduleServiceImpl [main] scedule with id schedule-anime not found
+2022-11-05 21:13:53,436 ERROR com.coffekyun.cinema.service.ScheduleServiceImpl [main] scedule with id schedule-anime not found
+2022-11-05 21:40:37,354 WARN com.coffekyun.cinema.service.OrderServiceImpl [main] user with id order-1 is not found
+2022-11-05 21:40:49,545 WARN com.coffekyun.cinema.service.OrderServiceImpl [main] user with id order-1 is not found
+2022-11-05 21:41:12,901 ERROR com.coffekyun.cinema.service.ScheduleServiceImpl [main] scedule with id schedule-anime not found
+2022-11-05 21:41:25,651 WARN com.coffekyun.cinema.service.SeatDetailServiceImpl [main] Seat can not be more than quantity
+2022-11-05 21:41:25,658 ERROR com.coffekyun.cinema.service.SeatDetailServiceImpl [main] the seat or studio has been ordered
+2022-11-05 21:41:38,671 WARN com.coffekyun.cinema.service.SeatServiceImpl [main] seat with code A1 is already exist
+2022-11-05 21:42:27,098 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with email kaguyachan@gmail.com is already exist
+2022-11-05 21:42:27,388 WARN com.coffekyun.cinema.service.UserServiceImpl [main] user with id not-found not found
+2022-11-05 21:42:27,397 ERROR com.coffekyun.cinema.service.UserServiceImpl [main] passwords don't match for user id random-id

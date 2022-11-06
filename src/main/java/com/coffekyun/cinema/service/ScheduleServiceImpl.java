@@ -26,7 +26,7 @@ public class ScheduleServiceImpl implements ScheduleService{
         orderRequest.getOrderDetailRequests().stream()
                 .forEach(orderDetailRequest -> {
                     Optional<Schedule> schedule = scheduleRepository.findById(orderDetailRequest.getScheduleId());
-                    if (schedule == null) {
+                    if (schedule.isEmpty()) {
                         log.error("scedule with id {} not found" , orderDetailRequest.getScheduleId());
                         throw new DataNotFoundException("Opps schedule with id " + orderDetailRequest.getScheduleId() + " not found");
                     }

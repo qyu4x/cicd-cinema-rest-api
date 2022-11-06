@@ -105,7 +105,7 @@ public class MovieServiceImpl implements MovieService {
     public MovieUpdateResponse update(MovieUpdateRequest title, String id) {
         log.info("update movie name based on id {} ", id);
         Optional<Movie> movieSearchResult = movieRepository.findById(id);
-        if (movieSearchResult == null) {
+        if (movieSearchResult.isEmpty()) {
             log.info("movies with id {} not found", id);
             throw new DataNotFoundException("data with id " + id + "not found");
         } else {

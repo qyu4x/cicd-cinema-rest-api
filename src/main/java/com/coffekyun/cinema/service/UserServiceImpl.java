@@ -40,7 +40,7 @@ public class UserServiceImpl implements UserService{
     @Override
     public UserResponse registerNewUserAccount(UserRequest userRequest) {
         log.info("do register new user account");
-        if (userRepository.findByEmail(userRequest.getEmail()) != null) {
+        if (userRepository.findByEmail(userRequest.getEmail()).getEmail() != null) {
             log.warn("user with email {} is already exist", userRequest.getEmail());
             throw new DataAlreadyExistsException(
                     "There is an account with that email adress:" + userRequest.getEmail()
@@ -76,7 +76,7 @@ public class UserServiceImpl implements UserService{
         Optional<User> user = userRepository.findById(id);
         if(user.isPresent()) {
             User updateUser = user.get();
-            boolean match =  passwordEncoderConfiguration.passwordEncoder().matches(userRequest.getOldPassword(), updateUser.getPassword());
+            boolean match = passwordEncoderConfiguration.passwordEncoder().matches(userRequest.getOldPassword(), updateUser.getPassword());
             if (match) {
                 updateUser.setName(toUser.getName());
                 updateUser.setEmail(toUser.getEmail());
@@ -98,8 +98,8 @@ public class UserServiceImpl implements UserService{
                 throw new NotMatchException("Opps, passwords don't match");
             }
         } else {
-            log.info("user with id {} not found", id);
-            throw new DataNotFoundException("user with id " + id + " not found");
+            log.info("user id {} not found", id);
+            throw new DataNotFoundException("user id " + id + " not found");
         }
     }
 
@@ -110,7 +110,7 @@ public class UserServiceImpl implements UserService{
             log.info("successfully delet user with id {}", id);
         } else {
             log.info("user with id {} not found", id);
-            throw new DataNotFoundException("user with id " + id + " not found");
+            throw new DataNotFoundException("user with id " + id + "not found");
         }
     }
 

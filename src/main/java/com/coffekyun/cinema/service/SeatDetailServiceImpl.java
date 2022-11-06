@@ -41,7 +41,7 @@ public class SeatDetailServiceImpl implements SeatDetailService{
         log.info("do add a seat with seat code {} ", seatDetailRequest.getSeatCode());
         Optional<Seat> seat = seatRepository.findById(seatDetailRequest.getSeatCode());
         Optional<Studio> studio = studioRepository.findById(seatDetailRequest.getStudioName());
-        if (seat == null || studio == null) {
+        if (seat.isEmpty() || studio.isEmpty()) {
             log.info("empty seats or studios can't be added");
             throw new DataNotFoundException("Oops studio data or seat not found");
         }
@@ -64,18 +64,10 @@ public class SeatDetailServiceImpl implements SeatDetailService{
 
             seatDetailRepository.addStudioAndSeat(seatDetail);
 
-            SeatDetail responseStudioAndSeat = seatDetailRepository.findByStudioAndSeat(
-                    Studio.builder()
-                            .id(seatDetail.getStudio().getName()).build(),
-                    Seat.builder()
-                            .id(seatDetail.getSeat().getSeatCode())
-                            .build()
-            );
             log.info("successfully added seats and studios");
             return SeatDetailResponse.builder()
-                    .studioName(responseStudioAndSeat.getStudio().getName())
-                    .seatCode(responseStudioAndSeat.getSeat().getSeatCode())
-                    .status(responseStudioAndSeat.getStatus())
+                    .studioName(seatDetail.getStudio().getName())
+                    .seatCode(seatDetail.getSeat().getSeatCode())
                     .build();
         }
 
@@ -106,7 +98,7 @@ public class SeatDetailServiceImpl implements SeatDetailService{
         orderRequest.getOrderDetailRequests().forEach(seatDetail -> {
            seatDetail.getOrderSeatRequests().forEach(orderSeatRequest -> {
                if (seatDetailRepository.findBySeatCodeAndStudioName(orderSeatRequest.getSeatCode()
-                       , orderSeatRequest.getStudioName()).isEmpty()) {
+                       , orderSeatRequest.getStudioName()) == null) {
                    log.info("seat or studio is not found");
                    throw new DataNotFoundException("Oops seat or studio not found");
                }

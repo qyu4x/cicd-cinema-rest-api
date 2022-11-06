@@ -23,7 +23,7 @@ import java.util.UUID;
 @Service
 public class RoleServiceImpl implements RoleService{
 
-    private final static Logger log = LoggerFactory.getLogger(RoleServiceImpl.class);
+    private static final Logger log = LoggerFactory.getLogger(RoleServiceImpl.class);
 
     private final RoleRepository roleRepository;
     private final PasswordEncoderConfiguration passwordEncoderConfiguration;
@@ -98,7 +98,7 @@ public class RoleServiceImpl implements RoleService{
                     UUID.randomUUID().toString(),
                     "ai",
                     "aichan@gmail.com",
-                    "0822671281271",
+                    "0822671281272",
                     passwordEncoderConfiguration.passwordEncoder().encode("aichan"),
                     LocalDateTime.now(),
                     LocalDateTime.now(),
@@ -128,7 +128,7 @@ public class RoleServiceImpl implements RoleService{
                     UUID.randomUUID().toString(),
                     "kaguyachan",
                     "kaguya@gmail.com",
-                    "0822671281271",
+                    "0822671281274",
                     passwordEncoderConfiguration.passwordEncoder().encode("kaguyachan"),
                     LocalDateTime.now(),
                     LocalDateTime.now(),

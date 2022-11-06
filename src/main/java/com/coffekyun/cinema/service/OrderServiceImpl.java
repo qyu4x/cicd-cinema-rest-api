@@ -16,40 +16,31 @@ import java.util.UUID;
 @Service
 public class OrderServiceImpl implements OrderService{
 
-    private final static Logger log = LoggerFactory.getLogger(OrderServiceImpl.class);
+    private static final Logger log = LoggerFactory.getLogger(OrderServiceImpl.class);
 
     @Autowired
     private OrderRepository orderRepository;
 
-    @Override
-    public void createUserOrder(OrderRequest orderRequest) {
-
-    }
 
     @Override
     public Order createOrder(String idUser) {
         log.info("make an order for user id {} ", idUser);
-        try {
-            User user = User.builder()
-                    .id(idUser)
-                    .build();
-            Order order = Order.builder()
-                    .id(UUID.randomUUID().toString())
-                    .user(user)
-                    .build();
-            log.info("successfully placed an order for user id {} ", idUser);
-            return orderRepository.save(order);
-        }catch (Exception exception) {
-            log.error("failed to make order for user id {} ", idUser);
-            throw new RuntimeException("Oops failed to make an order");
-        }
+        User user = User.builder()
+                .id(idUser)
+                .build();
+        Order order = Order.builder()
+                .id(UUID.randomUUID().toString())
+                .user(user)
+                .build();
+        log.info("successfully placed an order for user id {} ", idUser);
+        return orderRepository.save(order);
     }
 
     @Override
     public Order findById(String id) {
         log.info("do take orders based on user id {} ", id);
         Optional<Order> orderResponse = orderRepository.findById(id);
-        if (orderResponse == null) {
+        if (orderResponse.isEmpty()) {
             log.warn("user with id {} is not found", id);
             throw new DataNotFoundException("user with id " + id + " not found");
         } else {

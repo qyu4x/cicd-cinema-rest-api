@@ -5,7 +5,6 @@ import com.coffekyun.cinema.entity.Order;
 
 public interface OrderService {
 
-    void createUserOrder(OrderRequest orderRequest);
     Order createOrder(String idUser);
 
     Order findById(String id);
